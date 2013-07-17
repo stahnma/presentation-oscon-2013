@@ -7,147 +7,195 @@
 ## Mike Stahnke
 ## Engineering Director
 ## @stahnma
+![Puppet Labs](images/logo.png "Puppet Labs")
 
-!SLIDE
-![Puppet Labs](../images/bio.jpg "Puppet Labs")
-
-!SLIDE
-# WHO AM I
-# How am i qualified
+!SLIDE center
+![Puppet Labs](images/bio.jpg "Puppet Labs")
 
 !SLIDE
 # Security Events
 
-!SLIDE
-# What makes up a security event
+* Puppet Labs
+* We handle security events
+
+    * 18 events in 2013
+    * 15 ytd in 2013
 
 !SLIDE
-# What makes them difficult
+# Shipped in lots of way
+
+* Our source code
+* Packages from us
+* Bundled solutions
+* Linux Distributions
+* 3rd parties
 
 !SLIDE
-* Privacy
-* Fixing
+# What makes up a security event?
+
+* Code is vulnerable
+* Something used in your code is vulnerable
+
+!SLIDE
+# What makes them difficult?
+
+* Bits for the fix
 * Compatiblity
 * Protection of end-users
+* Privacy
 
 !SLIDE
-* 
+
+##For this we need a proces
+
+##Process have a beginning.
 
 !SLIDE center
-![Puppet Labs](images/community_venn.jpg "Puppet Labs")
+![Puppet Labs](images/security_page_sm.png "Puppet Labs")
 
 !SLIDE center
-![Puppet Labs](images/community_venn2.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/ilovepuppet.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/events1.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/events2.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/recent_stuff.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/recent_puppet_goodness.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/screenshot_1330369083_4.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/ftw_msi_facter_interactive_1a.jpg "Puppet Labs")
+![Puppet Labs](images/security_page_sm-rd.png "Puppet Labs")
 
 
 !SLIDE center
-![Puppet Labs](images/opensource2012.jpg "Puppet Labs")
+#Vulnerability is discovered/disclosed
+
+![Puppet Labs](images/vulnerabilities.jpg "Puppet Labs")
 
 !SLIDE center
-![Puppet Labs](images/versioning.jpg "Puppet Labs")
+![Puppet Labs](images/whatnow_sm.png "Puppet Labs")
+
+!SLIDE
+#Confirm the vulnerability
+
+* Can you reproduce it
+* Is it purely hypothetical?
 
 !SLIDE center
-![Puppet Labs](images/puppet3_highlights.jpg "Puppet Labs")
+
+![Puppet Labs](images/check.png "Puppet Labs")
+
+
+!SLIDE
+#Privacy of the vulnerability
+
+* Is the vulnerability known to the public?
+* Is it a common pattern that is plubicly known?
+* Has the vulnerability been responsiby disclosed?
 
 !SLIDE center
-![Puppet Labs](images/puppet3_scope.jpg "Puppet Labs")
+![Puppet Labs](images/leak.jpg "Puppet Labs")
+
+!SLIDE
+#Public Knows ?
+
+* Work fast
+* Offer public work-arounds if possible
+* Be as transparent as possible
+* Figure out severity of issue
+
+!SLIDE
+#Responsibly disclosed?
+
+## Figure out the impact of issue
 
 !SLIDE center
-![Puppet Labs](images/mco2.jpg "Puppet Labs")
+# Request CVE
+## Common Vulnerability Exposure number
 
 !SLIDE center
-![Puppet Labs](images/facter.jpg "Puppet Labs")
+![Puppet Labs](images/cve_sm.png "Puppet Labs")
 
 !SLIDE center
-![Puppet Labs](images/forge_total.jpg "Puppet Labs")
+# Determine Impact
+![Puppet Labs](images/impact.jpg "Puppet Labs")
 
 !SLIDE center
-![Puppet Labs](images/forge_total_skitch.jpg "Puppet Labs")
+![Puppet Labs](images/cvss_sm.png "Puppet Labs")
+
+
+!SLIDE
+* Timeliness
+* Protection of users
+* Larger Audit of patterns
+
+!SLIDE
+# Impact - Attack
+
+* How large is the attack vector?
+* Window of time?
+* Feature enabled by default?
+* Complicated to do?
+
+!SLIDE
+# Impact - Risk
+
+* Data integrity
+* Confidentiality
+* Availability
+
+!SLIDE
+# Impact - Type
+
+* Local privlege escalation
+* Remote arbitrary code
+* DOS
+* Bad practice
+
+!SLIDE
+# Communication
+
+ * Begin coordination effort
+ * People fixing issue need information
+ * Doc writers might
+ * Website team
+ * No downstream comms yet
+
+!SLIDE
+# Communication
+
+ * Private bug tracker
+ * Request CVE if needed
+ * Review who downstream will need info/fixes
+ * Decide on versions to support/backport fixes for
+
+!SLIDE
+
+  * Create fixes (in private repo if possible)
+  * Run tests (in private)
+
+!SLIDE
+# External Communication
+
+  * Testing looks good?
+  * Communication confidential release plan (if required)
+  * Establish black-out period
+  * Give downstream enough time to react (at least 48 hours)
+
+!SLIDE
+# Announce
+
+* Shout to educate your userbase
+* Send to mailing list
+* IRC, blog, website etc
+
+!SLIDE
+# Decision points
+
+* Publish tests with exploits? When?
+* Publish all new patches in public VCS? When?
+* Follow up questions
+* Make public bug-tracking issues
+
+!SLIDE
+# Attribution
 
 !SLIDE center
-![Puppet Labs](images/forge1.jpg "Puppet Labs")
+![Puppet Labs](images/security_page_sm-thank.png "Puppet Labs")
 
 !SLIDE center
-![Puppet Labs](images/moduletool.jpg "Puppet Labs")
+![Puppet Labs](images/ack_sm.png "Puppet Labs")
 
-!SLIDE center
-![Puppet Labs](images/forge2.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/ryan_stick.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/ryan.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/openstack1.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/recent_stuff.jpg "Puppet Labs")
-
-
-!SLIDE center
-![Puppet Labs](images/puppetdb1.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/puppetdb3.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/puppetdb2.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/tech_choices.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/tech_choices2.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/puppetdb_screenshot.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/razor.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/razor_policies.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/opensource-progress.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/sites.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/dashboard.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/enc.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/opensource2012_skitch.jpg "Puppet Labs")
-
-!SLIDE center
-![Puppet Labs](images/opensource2012_skitch.jpg "Puppet Labs")
 
 
 
@@ -155,5 +203,5 @@
 ![Puppet Labs](images/hand_tat.jpg "Puppet Labs")
 
 
-!SLIDE center
-![Puppet Labs](images/hand_logo.jpg "Puppet Labs")
+!SLIDE
+# Security is a popularity contest
