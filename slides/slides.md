@@ -21,6 +21,10 @@
     * 18 events in 2013
     * 15 ytd in 2013
 
+* Security is a popularity contest
+
+![Puppet Labs](images/padlock_sm.jpg "Puppet Labs")
+
 !SLIDE
 # Shipped in lots of way
 
@@ -75,6 +79,11 @@
 
 ![Puppet Labs](images/check.png "Puppet Labs")
 
+!SLIDE center
+#Is the problematic pattern in use elsewhere?
+![Puppet Labs](images/blackboard.jpg "Puppet Labs")
+
+
 
 !SLIDE
 #Privacy of the vulnerability
@@ -112,12 +121,6 @@
 
 !SLIDE center
 ![Puppet Labs](images/cvss_sm.png "Puppet Labs")
-
-
-!SLIDE
-* Timeliness
-* Protection of users
-* Larger Audit of patterns
 
 !SLIDE
 # Impact - Attack
@@ -160,6 +163,7 @@
  * Decide on versions to support/backport fixes for
 
 !SLIDE
+# Coding
 
   * Create fixes (in private repo if possible)
   * Run tests (in private)
@@ -168,9 +172,13 @@
 # External Communication
 
   * Testing looks good?
-  * Communication confidential release plan (if required)
+  * Communication confidential release plan 
+  
+  (if required)
   * Establish black-out period
-  * Give downstream enough time to react (at least 48 hours)
+  * Give downstream enough time to react 
+  
+   (at least 48 hours)
 
 !SLIDE
 # Announce
@@ -187,8 +195,11 @@
 * Follow up questions
 * Make public bug-tracking issues
 
-!SLIDE
-# Attribution
+!SLIDE center
+# Attribution: Did you forget?
+
+![Puppet Labs](images/dre.jpg "Puppet Labs")
+
 
 !SLIDE center
 ![Puppet Labs](images/security_page_sm-thank.png "Puppet Labs")
@@ -197,11 +208,18 @@
 ![Puppet Labs](images/ack_sm.png "Puppet Labs")
 
 
-
-
 !SLIDE center
 ![Puppet Labs](images/hand_tat.jpg "Puppet Labs")
 
-
 !SLIDE
-# Security is a popularity contest
+# Further Reading
+
+* puppetlabs.com/security
+* reddit.com/r/netsec
+* access.redhat.com/security/team
+* wiki.ubuntu.com/SecurityTeam
+* www.debian.org/security/
+* www.first.org/cvss/cvss-guide
+* cve.mitre.org/
+
+
