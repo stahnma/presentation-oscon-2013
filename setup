@@ -1,0 +1,2 @@
+export PATH=$PATH:/Users/stahnma/oscon_preso/gems/bin
+export GEM_HOME=/Users/stahnma/oscon_preso/gems

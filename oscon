@@ -1,0 +1,44 @@
+Who am i
+What do I do
+Number of security events
+Distibutions to coordinate with
+Responsible disclosure, bounty boards (average more than 1 a day)
+handilng private comms
+Private bugs
+model the process
+Number of libraries we use
+push tests later
+Walk through an event
+hints from current security events, identifying patterns
+working with other memebers of commit staff
+marketing
+blocking commits onto the security release
+don't combine security and feature releases
+hack the planet
+
+
+
+18 so far in 2013
+15 in 2012
+
+Natively package for
+* EL, Fedora, Windows, Mac, Gems, Debian, Ubuntu
+
+* Security list: + Gentoo, Solaris (OpenCSW),
+
+screenshots:
+cvss
+cve homepage
+puppet labs security page
+
+ideas:
+* snowden
+*
+
+
+
+Slides on Risk Analysis
+Process top to bottom
+What to share and when to share it
+Back-porting with distributions
+
