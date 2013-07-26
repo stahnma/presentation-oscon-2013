@@ -1,0 +1,391 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>OSCON 2013</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div class="step slide" data-x="-1000" data-y="-1500">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+       <q>Once Upon a CVE</q>
+       <br />
+        <br />
+        <i>Managing Security Events as an Upstream</i>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500" id='junk'>
+
+       <br />
+       <br />
+       <br />
+       <br />
+       <br />
+      <center>
+       <font size=7>Michael Stahnke</font>
+       <br />
+       <br />
+       <br />
+       <br />
+       <font size=6>Engineering Director</font>
+       <br />
+       <br />
+        @stahnma
+       <br />
+       <br />
+       <br />
+       <br />
+        <img src="images/logo.png">
+       <br />
+       <br />
+      </center>
+    </div>
+
+    <div id="title2" class="step" data-x="-10000" data-y="0" data-scale="4">
+        <img src="images/bio.jpg">
+    </div>
+
+    <div id="title1" class="step" data-x="-20000" data-y="0" data-scale="6" data-rotate=90>
+        <h1> Security Events at Puppet Labs</h1>
+        <li> 18 events in 2012
+        <li> 15 events ytd in 2013
+        <li> Security is not unlike a popularity contest <br />
+        <span class="try"><img src="images/padlock_sm.jpg"></span>
+    </div>
+
+    <div id="title3" class="step" data-x="-23000" data-y="0" data-scale="2" data-rotate=180>
+        <br />
+        <strong> Code shipped in many forms</strong>
+        <li> source downloads
+        <li> packages from us
+        <li> bundled solutions
+        <li> Linux distributions
+        <li> 3rd parties
+    </div>
+
+
+    <div class="step slide" data-x="3000" data-y="-1500" >
+     <q>
+        <strong>What Makes up a Security Event?</strong>
+           <li>  Code is vulnerable
+           <li>  Something used by your code is vulnerable
+
+      </q>
+  </div>
+
+    <div class="step" data-x="-28000" data-y="0" data-scale="1" data-rotate=254>
+     <q>
+        <strong>What makes these events difficult?</strong>
+           <li>  Bits for the fix
+           <li>  Compatibility
+           <li>  Protection of end-users
+           <li>  Privacy
+      </q>
+    </div>
+
+    <!--
+    <div id="title" class="step" data-x="-5000" data-y="0" data-scale="6" data-rotate=180>
+        <span class="try">Events and community</span><br />
+        <h2>around Puppet</h2>
+    </div>
+   -->
+
+
+   <!--
+    <div class="step" data-x="8000" data-y="-500" data-scale="1" data-rotate=33>
+      <img src="images/events1.jpg">
+   </div>
+   -->
+
+  <!--
+    <div class="step" data-x="8000" data-y="-2500" data-scale="3" data-rotate=45>
+      <img src="images/events2.jpg">
+   </div>
+  -->
+
+
+  <div id="big" class="step" data-x="7500" data-y="12900" data-rotate="180" data-scale="6">
+      <p>For this, we need a <span class="thoughts">process</span>
+      <br />
+      <br />
+      <br />
+      <br />
+      </p>
+      <p> Processes have a beginning</p>
+  </div>
+
+  <div class="step" data-x="3000" data-y="-3500" >
+      <q>
+          <img src="images/security_page_sm.png">
+      </q>
+  </div>
+
+  <div class="step" data-x="4200" data-y="-3500" >
+      <q>
+          <img src="images/security_page_sm-rd.png">
+      </q>
+  </div>
+
+  <div class="step" data-x="14500" data-y="4500" data-scale="5" data-rotate=287>
+      <q>
+          <p> Vulnerability is discovered </p>
+          <img src="images/vulnerabilities.jpg">
+      </q>
+  </div>
+
+
+    <div class="step" data-x="-10000" data-y="6600" data-scale="3" data-rotate=87>
+      <img src="images/whatnow_sm.png">
+   </div>
+
+    <div class="step slide" data-x="7500" data-y="1100" data-rotate="240" data-scale="1">
+        <q>
+            <p><strong>Confirm the Vulnerability</strong>
+        <br />
+        <br />
+        <br />
+        <li>Can you reproduce it?
+        <li>Is it purely hypothetical?
+        <br />
+        </p>
+    </q>
+    </div>
+
+   <div class="step" data-x="1000" data-y="-2500"  data-rotate="0">
+      <img src="images/check.png">
+   </div>
+
+   <div class="step slide" data-x="2500" data-y="-2500"  data-rotate="0">
+     <h2> Is the problematic pattern in use elsewhere? </h2>
+     <br />
+     <br />
+     <br />
+     <img src="images/blackboard.jpg">
+   </div>
+
+   <div class="step slide" data-x="7000" data-y="-2500"  data-rotate="0">
+       <h1>Privacy of the vulnerability</h1>
+       <br />
+       <br />
+       <p>
+           <li> Is the vulnerability known to the public?
+       <br />
+       <br />
+           <li> Is it based upon a common pattern that is plubicly known?
+       <br />
+       <br />
+           <li> Has the vulnerability been responsiby disclosed?
+       </p>
+   </div>
+
+    <div id="its" class="step" data-x="050" data-y="3000" data-rotate="90" data-scale="3">
+     <img src="images/leak.jpg">
+    </div>
+
+    <div id="its2" class="step" data-x="1850" data-y="5500" data-rotate="90" data-scale="2">
+        <p><strong>Public Knows?</strong>
+        <li>Work fast
+        <li>Offer public work-arounds if possible
+        <li>Be as transparent as possible
+        <li>Figure out severity of issue
+        </p>
+    </div>
+
+    <div class="step" data-x="1050" data-y="1000" data-rotate=90 >
+        Responsibly disclosed?
+        <br />
+        <br />
+        <br />
+        Figure out the impact of issue
+     </div>
+
+    <div class="step slide" data-x="2050" data-y="1000" data-rotate=90 >
+        <p>Request CVE</p>
+        <br />
+        <br />
+        <br />
+        Common Vulnerability Exposure number
+        <br />
+        <br />
+        <img src="images/panic_sm.jpg">
+    </div>
+
+    <div class="step" data-x="1050" data-y="1000" data-rotate=90 >
+          <img src="images/cve_sm.png">
+    </div>
+
+    <div class="step" data-x="4050" data-y="1000" data-rotate=0 data-scale="4" >
+     <br>
+        Determine the impact
+     <br>
+       <img src="images/impact.jpg">
+    </div>
+
+    <div class="step" data-x="8650" data-y="1000" data-rotate=190 data-scale="1" >
+       <img src="images/cvss_sm.png">
+    </div>
+
+ <!--  <div class="step" data-x="15050" data-y="3000" data-rotate=190 data-scale="4" > -->
+ <div class="step slide" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+     <q>
+     <strong> Impact - Attack</strong>
+     <li> How large is the attack vector?
+     <li> Window of time?
+     <li>Feature enabled by default?
+     <li>Complicated to do?
+ </q>
+    </div>
+
+
+    <div class="step slide" data-x="3525" data-y="2325" data-z="-3000" data-rotate=300>
+     <q>
+        <strong>Impact - Risk</strong>
+        <li>Data integrity
+        <li>Confidentiality
+        <li>Availability
+      </q>
+     </div>
+
+    <div class="step slide" data-x="4225" data-y="2325" data-z="-3000" data-rotate=300>
+     <q>
+        <strong>Impact - Type</strong>
+        <li>Local privlege escalation
+        <li>Remote arbitrary code
+        <li>DOS
+        <li>Bad practice
+      </q>
+     </div>
+
+    <div class="step" data-x="19999" data-y="6000" data-rotate=308 data-scale="6" >
+         <strong>Communication</strong>
+
+         <li>Begin coordination effort
+         <li>People fixing issue need information
+         <li>Doc writers might
+         <li>Website team
+         <li>No downstream comms yet
+    </div>
+
+
+    <div class="step" data-x="-6000" data-y="-1500" data-rotate=45 data-scale="3">
+     <q>
+        <strong>Communication</strong><br/>
+        <li>Private bug tracker
+        <li>Request CVE if needed
+        <li>Review who downstream will need info/fixes
+        <li>Decide on versions to support/backport fixes for
+      </q>
+     </div>
+
+    <div class="step slide" data-x="-5000" data-y="1900" data-scale="6" data-rotate=180>
+        <q>
+        <strong>Engineering</strong><br /><br />
+
+        <li>Create fixes (in private repo if possible)
+        <li>Run tests (in private)
+    </q>
+    </div>
+
+    <div class="step" data-x="8000" data-y="1900" data-scale="1" data-rotate=33>
+        <q>
+            <strong> External Communication</strong>
+            <li>Testing looks good?
+            <li> Communication confidential release plan
+            (if required)
+            <li>      Establish black-out period
+            <li>      Give downstream enough time to react
+            (at least 48 hours)
+        </q>
+    </div>
+
+    <div class="step slide" data-x="8000" data-y="-2500" data-scale="3" data-rotate=45>
+        <q>
+            <strong>Announce </strong>
+
+            <li>Shout to educate your userbase
+            <li>Send to mailing list
+            <li>IRC, blog, website, podcast, etc
+        </q>
+    </div>
+
+    <div class="step" data-x="10000" data-y="-5500" data-scale="2" data-rotate=35>
+      <strong>Decision Points</strong>
+
+      <li>Publish tests with exploits? When?
+      <li>Publish all new patches in public VCS? When?
+      <li>Follow up questions
+      <li>Make public bug-tracking issues
+   </div>
+
+   <div class="step" data-x="-17000" data-y="-444" data-scale="6" data-rotate=180>
+       <span class="try">Attribution </span>Did you forget?<br />
+       <img src='images/dre.jpg'>
+   </div>
+
+   <div class="step" data-x="-21000" data-y="8777" data-scale="1" data-rotate=77>
+       <img src="images/security_page_sm-thank.png">
+   </div>
+   <div class="step" data-x="-20000" data-y="8777" data-scale="1" data-rotate=77>
+       <img src="images/ack_sm.png">
+   </div>
+
+
+    <div class="step"  data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="190" data-scale="10">
+         <img src="images/hand_tat.jpg">
+    </div>
+
+<!-- <div id="title" class="step" data-x="-5000" data-y="0" data-scale="6" data-rotate=180>
+        <span class="try">Events and community</span><br />
+        <h2>around Puppet</h2>
+    </div>
+-->
+
+
+ <div id="its-in-3d" class="step" data-x="-6000" data-y="-4321"   data-rotate-"11" data-scale="4">
+     <p>
+     <li>puppetlabs.com/security
+     <li>reddit.com/r/netsec
+     <li>access.redhat.com/security/team
+     <li>wiki.ubuntu.com/SecurityTeam
+     <li>www.debian.org/security/
+     <li>www.first.org/cvss/cvss-guide
+     <li>cve.mitre.org/
+     </p>
+    </div>
+
+
+
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+</body>
+</html>
